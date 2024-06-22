@@ -1,11 +1,39 @@
 Package: DynnetEDA
 Type: Package
-Title: What the Package Does (Title Case)
+Title: DynnetEDA: Visualize and Analyze Dynamic Networks Using Latent Functions
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: person(given = "Haosheng",
+           family = "Shi",
+           role = c("aut", "cre"),
+           email = "305625829@qq.com")
+Maintainer: Haosheng Shi  <305625829@qq.com>
+Description: Tools for performing visualization and exploratory analysis for dynamic, discrete-time networks. You can convert a dynamic network into multivariate latent functions for each node via these functions. Then you use the latent functions obtained to carry out community detection, nodal importance identification, and many other tasks on the network.
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    Bolstad2,
+    ClusterR,
+    factoextra,
+    fda,
+    flexclust,
+    funData,
+    kselection,
+    lowmemtkmeans,
+    MFPCA,
+    reshape2,
+    scales,
+    trimcluster
+Depends: 
+    doParallel,
+    doSNOW,
+    dplyr,
+    foreach,
+    ggalt,
+    ggplot2,
+    parallel,
+    R (>= 2.10)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+License: MIT + file LICENSE
