@@ -1,6 +1,6 @@
 This is an R package implementing visualization tools for our work, *exploratory analysis of dynamic networks using latent functions*.
 
-The R package can be installed by following codes:
+The R package can be installed by following codes on the Windows system:
 
 ```{r}
 options(download.file.method = "wininet")
